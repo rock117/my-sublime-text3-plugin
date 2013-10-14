@@ -18,3 +18,9 @@ class CmdCommand(sublime_plugin.TextCommand):<br>
 
 3. restart your sublime text3<br>
    after restart, it works.<br>
+
+4. plugin introduction
+4.1 Newfile.py
+    create a html file template at current view. in console view, view.run_command('newfile') or define a key map for run
+4.2 Run.py
+    run the current file from sublime text, support html, python, perl
