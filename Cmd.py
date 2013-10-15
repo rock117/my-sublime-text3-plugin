@@ -4,6 +4,7 @@ import os.path
 class CmdCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		#os.system('cmd')
+ 
 		fileName = self.view.file_name()
 		dirname = os.path.dirname(fileName)
 		os.chdir(dirname)
@@ -18,3 +19,4 @@ class CmdCommand(sublime_plugin.TextCommand):
 		# f.write("cmd /k cd "+driveStr+dirname)
 		# f.close()
 		# os.startfile('runcmd.bat')
+
