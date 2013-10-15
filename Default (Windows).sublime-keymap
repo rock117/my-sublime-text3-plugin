@@ -1,0 +1,6 @@
+[
+	 {"keys": ["f11"], "command": "cmdRunner"},
+	 {"keys": ["f5"], "command": "run"},
+	  {"keys": ["ctrl+f5"], "command": "cmd"},
+	 {"keys": ["f1"], "command": "newfile"}
+]
