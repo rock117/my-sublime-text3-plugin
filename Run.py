@@ -1,6 +1,7 @@
 import sublime, sublime_plugin
 import os
 import os.path
+import subprocess
 class RunCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		#os.system('cmd')
@@ -9,10 +10,12 @@ class RunCommand(sublime_plugin.TextCommand):
 		os.chdir(dirNmae)
 		basename = os.path.basename(filleName)
 		if(filleName.endswith('.pl')):
-			os.system('perl '+basename)
+			subprocess.Popen(['perl',basename])
 		elif(filleName.endswith('.py')):
-			os.system('python '+basename)
+			subprocess.Popen(['python',basename])
 		else:
 			os.system('chrome '+basename)	
+
+
 
 
